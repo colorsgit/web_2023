@@ -1,3 +1,4 @@
+<!--
 <style>
     div.example {
         background-color: white;
@@ -9,6 +10,7 @@
         background-color: black;
     }
 </style>
+-->
 
 # タグとは
 
