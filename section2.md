@@ -1,15 +1,3 @@
-<style>
-    div.example {
-        background-color: white;
-        color: black;
-        padding: 1em;
-        margin: 1em 0;
-    }
-    hr {
-        background-color: black;
-    }
-</style>
-
 # タグとは何か
 
 ## h1, h2, h3タグ
@@ -26,7 +14,7 @@
 <h3>小見出し</h3>
 ```
 
-<div class="example">
+<div style="border: 1px solid black">
     <h1>大見出し</h1>
     <h2>中見出し</h2>
     <h3>小見出し</h3>
