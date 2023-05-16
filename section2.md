@@ -1,4 +1,3 @@
-<!--
 <style>
     div.example {
         background-color: white;
@@ -10,9 +9,28 @@
         background-color: black;
     }
 </style>
--->
 
-# HTMLファイルの内容
+# タグとは
+
+## Web制作でのHTMLの立ち位置
+
+Web制作は、
+
+- HTML
+- CSS
+- Javascript
+
+の３つの言語を使って行われます。HTMLはWebページの論理構成を、CSSはWebページのデザインを、JavascriptはWebページの動的部分を担当しています。
+
+<img src="assets/langs.png">
+
+例えば、KULASISのログイン画面では、ユーザー名やパスワードの入力欄はHTMLで設置し、CSSで装飾を施し、Javascriptでログインボタンが押されたときの動作を決めています。
+
+<img src="assets/kulasis.png">
+
+論理構成、デザイン、動作を別々の言語で書くことにより、それぞれの分野を独立して設計することができます。
+
+## HTMLファイルの内容
 
 ```html
 <!DOCTYPE html>
@@ -54,9 +72,31 @@
 
 htmlファイルは様々なタグを組み合わせて作っていきます。ここでは、代表的なタグをいくつか紹介します。
 
+## htmlタグ
+
+HTMLのタグは全てhtmlタグの中に書いていきます。
+
+## headタグ
+
+Webページの設定を行います。
+詳しくは次回説明します。
+
 ## bodyタグ
 
 サイトの内容は、`body`タグの中に書いていきます。
+
+`html`タグ、`head`タグ、`body`タグは必ず書かなければならないタグです。つまり、以下の内容がHTMLファイルに最低限書かなければならない内容です。
+
+```html
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+```
+
+この状態でブラウザで表示すると、真っ白な画面が表示されます。
 
 ## h1, h2, h3タグ
 
@@ -143,6 +183,25 @@ brタグは改行を表す。<br/>brタグを使わずに
 ```
 
 <img src="assets/xl_tag.png">
+
+## 例題
+
+<img src="assets/mtg_markup.png">
+
+```html
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>会議アジェンダ</h1>
+        <ol>
+            <li>アイスブレイク</li>
+            <li>先月の売上を共有する</li>
+            <li>今月の目標を決める</li>
+        </ol>
+    </body>
+</html>
+```
 
 ## 練習問題
 
