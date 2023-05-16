@@ -1,3 +1,17 @@
+<!--
+<style>
+    div.example {
+        background-color: white;
+        color: black;
+        padding: 1em;
+        margin: 1em 0;
+    }
+    hr {
+        background-color: black;
+    }
+</style>
+-->
+
 # タグとは何か
 
 ## h1, h2, h3タグ
@@ -14,11 +28,7 @@
 <h3>小見出し</h3>
 ```
 
-<div style="border: 1px solid black">
-    <h1>大見出し</h1>
-    <h2>中見出し</h2>
-    <h3>小見出し</h3>
-</div>
+<img src="assets/hx_tag.png">
 
 ## brタグ
 
@@ -29,10 +39,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 単に改行するだけでは、改行せずに表示される。
 ```
 
-<div class="example">
-brタグは改行を表す。<br/>brタグを使わずに
-単に改行するだけでは、改行せずに表示される。
-</div>
+<img src="assets/br_tag.png">
 
 ## pタグ
 
@@ -45,12 +52,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 </p>
 ```
 
-<div class="example">
-    <p>
-        吾輩は猫である。<br/>
-        名前はまだない。
-    </p>
-</div>
+<img src="assets/p_tag.png">
 
 ## aタグ
 
@@ -62,9 +64,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 <a href="https://www.google.com">ここ</a>からGoogleを開けます。
 ```
 
-<div class="example">
-    <a href="https://www.google.com">ここ</a>からGoogleを開けます。
-</div>
+<img src="assets/a_tag.png">
 
 ## hrタグ
 
@@ -74,9 +74,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 <hr/>
 ```
 
-<div class="example">
-    <hr/>
-</div>
+<img src="assets/hr_tag.png">
 
 ## ol, ulタグ
 
@@ -100,18 +98,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 </ul>
 ```
 
-<div class="example">
-    <ol>
-        <li>ハワイ旅行</li>
-        <li>大型テレビ</li>
-        <li>電気ケトル</li>
-    </ol>
-    <ul>
-        <li>たんぽぽ</li>
-        <li>ひまわり</li>
-        <li>あさがお</li>
-    </ul>
-</div>
+<img src="assets/xl_tag.png">
 
 ## 練習問題
 
@@ -119,6 +106,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 
 ブログのURLは、`https://www.example.com`とします。
 
+<!--
 <div class="example">
     <h1>本日のメニュー</h1>
     <h2>前菜</h2>
@@ -147,6 +135,9 @@ brタグは改行を表す。<br/>brタグを使わずに
         詳しくは、<a href="https://www.example.com">当店のブログ</a>からご覧いただけます。
     </p>
 </div>
+-->
+
+<img src="assets/menu_markup.png">
 
 ## imgタグ
 
@@ -158,9 +149,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 <img src="https://www.kyoto-u.ac.jp/sites/default/files/embed/jaaboutoperationsymbolimagesgakki.jpg"/>
 ```
 
-<div class="example">
-    <img src="https://www.kyoto-u.ac.jp/sites/default/files/embed/jaaboutoperationsymbolimagesgakki.jpg"/>
-</div>
+<img src="assets/img_tag.png">
 
 ## tableタグ
 
@@ -189,26 +178,13 @@ brタグは改行を表す。<br/>brタグを使わずに
 </table>
 ```
 
-<div class="example">
-    <table>
-        <caption>大学の学生数</caption>
-        <tr>
-            <th>京都大学</th>
-            <th>同志社大学</th>
-            <th>龍谷大学</th>
-        </tr>
-        <tr>
-            <td>22,785人</td>
-            <td>30,602人</td>
-            <td>20,244人</td>
-        </tr>
-    </table>
-</div>
+<img src="assets/table_tag.png">
 
 ## 練習問題
 
 次の内容をHTMLで記述してください。
 
+<!--
 <div class="example">
     <table>
         <caption>今週のスケジュール</caption>
@@ -253,6 +229,9 @@ brタグは改行を表す。<br/>brタグを使わずに
         </tr>
     </table>
 </div>
+-->
+
+<img src="assets/schedule_markup.png">
 
 ## spanタグ
 
@@ -262,9 +241,7 @@ brタグは改行を表す。<br/>brタグを使わずに
 <span style="color: red">BIZ</span>REACH
 ```
 
-<div class="example">
-    <span style="color: red">BIZ</span>REACH
-</div>
+<img src="assets/span_tag.png">
 
 ## divタグ
 
@@ -278,10 +255,4 @@ brタグは改行を表す。<br/>brタグを使わずに
 </div>
 ```
 
-<div class="example">
-    <div style="background-color: gray;">
-        note <br/>
-        divタグはcssやjavascriptの適用範囲を<br/>
-        指定するために用いられることが多いです。
-    </div>
-</div>
+<img src="assets/div_tag.png">
