@@ -266,11 +266,71 @@ a:hover {
 
 <img src="assets/box_model.png">
 
-### marginの相殺
+CSSで設定できる余白には、paddingとmarginの二種類あります。paddingはコンテンツのすぐ外側、marginはさらに外側の余白です。paddingとmarginの間には枠線borderを入れることができます。
+
+このような、コンテンツ、padding、border、marginの層構造をbox modelといいます。
+
+### 余白の設定
+
+余白は`padding`プロパティや`margin`プロパティで設定します。
+
+```
+/* 上 | 右 | 下 | 左 */
+margin: 10px 10px 0 0;
+
+/* 上下 | 左右 */
+margin: 0 10px;
+
+/* 上下左右 */
+margin: 10px;
+
+/* paddingも同様 */
+```
+
+### 枠線の設定
+
+枠線は`border`プロパティで設定します。
+
+```
+/* 線幅 スタイル 色 */
+border: 2px solid black;
+```
+
+### paddingとmarginの違い
+
+paddingは枠線の内側であることから分かる通り、要素の範囲内の余白と考えられます。一方、marginは要素の範囲外の余白と考えられます。
+
+つまり、余白を要素の範囲に含めたいときはpaddingを使い、要素の範囲に含めたくないときはmarginを使います。
+
+- 背景色
+
+背景色`background-color`を設定した場合は、paddingまでの範囲の背景色が変わります。
+
+- `width`、`height`
+
+`width`プロパティや`height`プロパティを設定した場合は、コンテンツの横幅や高さが設定した値になります。
+
+- marginの相殺
+
+上要素のmarginと下要素のmarginが隣接するときは、小さい方のmarginは無視されます。
 
 ### `box-sizing`プロパティ
 
+`width`プロパティや`height`プロパティで設定する値が、どの部分の横幅や高さを設定しているのかを指定します。
+
+既定値は`content-box`で、コンテンツの横幅や高さとなっています。
+
+```
+box-sizing: content-box, border-box
+```
+
 ### `border-radius`プロパティ
+
+枠線は四隅の角を丸くすることができます。`border-radius`プロパティには四隅の円弧の半径を設定します。
+
+```
+border-radius: 10px
+```
 
 ## 練習問題２
 
@@ -315,6 +375,8 @@ HTMLの要素には、ブロック要素とインライン要素があります�
 |div||
 
 インライン要素では上下marginを設定することができません。また、インライン要素のpaddingは、上下の要素と重なって表示されるため、インライン要素のpaddingの使用は非推奨です。
+
+<img src="assets/inline_padding.png"/>
 
 また、インライン要素には横幅`width`と高さ`height`を設定することもできません。
 
