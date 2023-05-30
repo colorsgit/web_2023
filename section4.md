@@ -137,7 +137,7 @@ position: static, relative, absolute, fixed
         background-color: red;
         height: 3px;
         width: 100%;
-        position: ???;
+        position: absolute;
         bottom: ???;
     }
 </style>
