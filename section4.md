@@ -25,8 +25,10 @@ HTMLの要素には、ブロック要素とインライン要素があります�
 
 CSSの`display`プロパティで、ブロック要素として扱うか、インライン要素として扱うか設定することができます。また、`none`とすると、要素を非表示にできます。
 
+`display`プロパティに`inline-block`を設定すると、インライン要素として扱いつつも、横幅`width`と高さ`height`を設定することができます。
+
 ```
-display: block, inline, none
+display: block, inline, inline-block, none
 ```
 
 ## 練習問題１
@@ -72,6 +74,17 @@ position: static, relative, absolute, fixed
 <img src="assets/position_absolute.png"/>
 
 要素は通常のフローから除外され、ページ内に要素のための空間が確保されません。祖先要素の内、`position`が`static`以外の要素に対して、相対配置されます。
+
+## 大きさの単位
+
+`width`、`height`、`font-size`、`margin`、`padding`といったプロパティには大きさを設定しますが、その際には様々な単位を使うことができます。
+
+|単位|意味|
+|-|-|
+|px|画素数|
+|em|フォントサイズの相対値|
+|rem|ルートフォントサイズの相対値|
+|%|親要素の幅の相対値|
 
 ## 例題１
 
@@ -128,4 +141,69 @@ position: static, relative, absolute, fixed
         bottom: ???;
     }
 </style>
+```
+
+## 左右・中央揃え
+
+子要素を左右・中央揃えにしたい場合は、`text-align`プロパティを設定します。
+
+- `center`：中央
+- `start`：左
+- `end`：右
+
+```html
+<div>既定の場所</div>
+<div style="text-align: center">中央揃え</div>
+```
+
+<img src="assets/text_align.png">
+
+## 練習問題３
+
+次のHTMLにCSSデザインを適用して自己紹介カードを作ってください。必要であれば、HTML要素にidやclassを付けてください。なお、自己紹介カードの横幅は`600px`で固定とします。
+
+<img src="assets/sec4_prac3.png"/>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <div id="card" style="width: 600px">
+        <h1><span>自己紹介カード</span></h1>
+        <div>
+            <img src="https://4.bp.blogspot.com/-bTipX3Vmpts/Wn1ZgUbOHXI/AAAAAAABKM4/b31Jvq8aWssiswuiO19BAJmmAC5WAzXwACLcBGAs/s400/character_boy_normal.png"/>
+            <dl>
+                <div>
+                    <dt>氏名</dt>
+                    <dd>斎藤　浩二</dd>
+                </div>
+                <div>
+                    <dt>生年月日</dt>
+                    <dd>平成13年5月9日</dd>
+                </div>
+                <div>
+                    <dt>住所</dt>
+                    <dd>京都府京都市左京区吉田本町</dd>
+                </div>
+                <div>
+                    <dt>交付</dt>
+                    <dd>令和03年08月15日</dd>
+                </div>
+            </dl>
+        </div>
+        <address>
+            <dl>
+                <div>
+                    <dt>Tel</dt>
+                    <dd><a href="tel:090-0000-0000">090-0000-0000</a></dd>
+                </div>
+                <div>
+                    <dt>Mail</dt>
+                    <dd><a href="mailto:saito@example.com">saito@example.com</a></dd>
+                </div>
+        </address>
+    </div>
+</body>
+</html>
 ```

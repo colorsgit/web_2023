@@ -6,33 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div id="card">
-        <h1>自己紹介カード</h1>
-        <dl>
-            <div id="name"></div>
-                <dt>氏名</dt>
-                <dd>斎藤　浩二</dd>
-            </div>
-            <div id="birth">
-                <dt>生年月日</dt>
-                <dd>平成13年5月9日</dd>
-            </div>
-        </dl>
-        <dl>
-            <div id="address">
-                <dt>住所</dt>
-                <dd>京都府京都市左京区吉田本町</dd>
-            </div>
-            <div id="issue">
-                <dt>交付</dt>
-                <dd>令和03年08月15日</dd>
-            </div>
-        </dl>
-        <img src="https://4.bp.blogspot.com/-bTipX3Vmpts/Wn1ZgUbOHXI/AAAAAAABKM4/b31Jvq8aWssiswuiO19BAJmmAC5WAzXwACLcBGAs/s400/character_boy_normal.png"/>
+    <div id="card" style="width: 600px">
+        <h1><span>自己紹介カード</span></h1>
+        <div id="info">
+            <img src="https://4.bp.blogspot.com/-bTipX3Vmpts/Wn1ZgUbOHXI/AAAAAAABKM4/b31Jvq8aWssiswuiO19BAJmmAC5WAzXwACLcBGAs/s400/character_boy_normal.png"/>
+            <dl>
+                <div id="name">
+                    <dt>氏名</dt>
+                    <dd>斎藤　浩二</dd>
+                </div>
+                <div id="birth">
+                    <dt>生年月日</dt>
+                    <dd>平成13年5月9日</dd>
+                </div>
+                <div id="address">
+                    <dt>住所</dt>
+                    <dd>京都府京都市左京区吉田本町</dd>
+                </div>
+                <div id="issue">
+                    <dt>交付</dt>
+                    <dd>令和03年08月15日</dd>
+                </div>
+            </dl>
+        </div>
         <address>
-            <a href="tel:090-0000-0000">090-0000-0000</a>
-            <a href="mailto:saito@example.com">saito@example.com</a>
+            <dl>
+                <div>
+                    <dt>Tel</dt>
+                    <dd><a href="tel:090-0000-0000">090-0000-0000</a></dd>
+                </div>
+                <div>
+                    <dt>Mail</dt>
+                    <dd><a href="mailto:saito@example.com">saito@example.com</a></dd>
+                </div>
         </address>
     </div>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h1 span {
+            position: relative;
+        }
+        h1 span::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            background-color: black;
+            height: 3px;
+            width: 100%;
+            bottom: -2px;
+        }
+        dt, dd {
+            display: inline-block;
+            margin: 0;
+        }
+        div#card {
+            border: 3px solid black;
+            border-radius: 1em;
+            padding: 0 2em;
+        }
+        #info img {
+            width: 150px;
+            display: inline-block;
+        }
+        #info dl {
+            padding-left: 2em;
+            display: inline-block;
+            width: 400px;
+            box-sizing: border-box;
+            text-align: start;
+            margin: 0;
+        }
+        #info dt {
+            width: 4em;
+            background-color: lightgray;
+            padding: 0.5em 1em;
+            text-align: center;
+            margin: 0.5em 0;
+        }
+        #info dd {
+            margin-left: 1em;
+        }
+        address {
+            display: block;
+            text-align: end;
+        }
+        address div {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
+    </style>
 </body>
 </html>
