@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="static" class="box">
+        <div>1</div>
+        <div class="move">2</div>
+        <div>3</div>
+    </div>    
+    <div id="relative" class="box">
+        <div>1</div>
+        <div class="move">2</div>
+        <div>3</div>
+    </div>
+    <div id="absolute" class="box">
+        <div>1</div>
+        <div class="move">2</div>
+        <div>3</div>
+    </div>
+    <style>
+        div#static {
+            display: none;
+        }
+        div#relative {
+            display: none;
+        }
+        div#absolute {
+            display: block;
+        }
+        div#static div.move {
+            position: static;
+        }
+        div#relative div.move {
+            position: relative;
+        }
+        div#absolute div.move {
+            position: absolute;
+        }
+        div#absolute {
+            position: relative;
+        }
+        .box {
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .box div {
+            height: 40px;
+            width: calc(100% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            background-color: lightgray;
+            border: 5px solid lightsalmon;
+            text-align: center;
+            font-size: 30px;
+        }
+        .move {
+            top: 30px;
+            left: 30px;
+        }
+    </style>
+</body>
+</html>

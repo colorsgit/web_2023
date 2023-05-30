@@ -3,30 +3,49 @@
     <head></head>
     <body>
         <h1>本日のメニュー</h1>
-        <h2>前菜</h2>
-        <ul>
-            <li>サラダ</li>
-            <li>生ハム</li>
-            <li>スープ</li>
-        </ul>
-        <hr/>
-        <h2>メイン</h2>
-        <ul>
-            <li>マルゲリータ</li>
-            <li>クワトロ・フォルマッジ</li>
-            <li>ボロネーゼ</li>
-            <li>ペスカトーレ</li>
-        </ul>
-        <hr/>
-        <h2>ドルチェ</h2>
-        <ul>
-            <li>バニラアイス</li>
-            <li>ガトーショコラ</li>
-        </ul>
+        <div class="menu">
+            <h2>前菜</h2>
+            <ul>
+                <li>サラダ</li>
+                <li>生ハム</li>
+                <li>スープ</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h2>メイン</h2>
+            <ul>
+                <li>マルゲリータ</li>
+                <li>クワトロ・フォルマッジ</li>
+                <li>ボロネーゼ</li>
+                <li>ペスカトーレ</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h2>ドルチェ</h2>
+            <ul>
+                <li>バニラアイス</li>
+                <li>ガトーショコラ</li>
+            </ul>
+        </div>
         <p>
             当店で使用している小麦は、<br/>
             国内の契約農家から仕入れています！！<br/>
             詳しくは、<a href="https://www.example.com">当店のブログ</a>からご覧いただけます。
         </p>
+
+        <style>
+            div.menu {
+                margin: 5px 0;
+                padding: 10px 10px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            h2 {
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+            }
+        </style>
     </body>
 </html>
