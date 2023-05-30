@@ -202,6 +202,7 @@ position: static, relative, absolute, fixed
                     <dt>Mail</dt>
                     <dd><a href="mailto:saito@example.com">saito@example.com</a></dd>
                 </div>
+            </dl>
         </address>
     </div>
 </body>
